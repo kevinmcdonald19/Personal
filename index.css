@@ -16,6 +16,7 @@ body{
 
 a:link{
 	color:white;
+	// removes the underlining
 	text-decoration:none;
 }
 
@@ -30,7 +31,7 @@ a:visited{
     height: 100%;  
     //margin:10px;  
     float:left;  
-    background:#161613;  
+    //background:#161613;  
     //border: solid 2px #8399AF;  
     overflow: hidden;  
     position: relative;  
@@ -90,11 +91,13 @@ a:visited{
 
 .row#one{
 	//background-color:white;
+
 }
 
 .row#two{
 	//background-color:white;
 	border:0;
+	height:200px
 }
 
 .row#three{
@@ -109,22 +112,18 @@ a:visited{
 }
 
 .tile#one{
-	//background-color:orange;
 	width:35%;
 }
 
 .tile#two{
-	//background-color:blue;
 	width:65%;
 }
 
 .tile#three{
-	background-color:purple;
 	width:20%;
 }
 
 .tile#four{
-	//background-color:blue;
 	width:25%;
 	background-color:#600cac;
 
@@ -162,22 +161,49 @@ div.tile#seven:hover{
 	background-color:#0c0874;
 }
 
-.tile#eight{
-	background-color:purple;
-	width:15%;
-}
-
-.tile#nine{
-	background-color:red;
-	width:45%;
-}
 
 .tileText{
-	font-size:25px;
+	font-size:35px;
 	font-weight:bold;
 	text-align:center;
 	margin-top:36%;
 }
+
+.behindText{
+	text-align:right;
+	margin-top:0%;
+	font-size:50px;
+	color:white;
+	padding:10px;
+}
+
+.behindText#spotify{
+	text-align:bottom;
+}
+
+
+
+
+.tile#spotify{
+	width:30%;
+	
+
+}
+
+.tile#soundcloud{
+	width:30%;
+	background-color:transparent;
+	
+}
+
+
+
+.tile#youtube{
+
+	width:40%;
+}
+
+
 
 
 

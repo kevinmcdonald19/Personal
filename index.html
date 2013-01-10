@@ -1,0 +1,189 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<!-- the CSS for Smooth Div Scroll -->
+	<link rel="stylesheet" type="text/css" href="horizontal-scroll/css/smoothDivScroll.css" />
+	
+	<!-- Styles for my specific scrolling content -->
+	<style type="text/css">
+
+		#makeMeScrollable
+		{
+			width:100%;
+			height: 100%;
+			position: relative;
+		}
+		
+		/* Replace the last selector for the type of element you have in
+		   your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+		   if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+		#makeMeScrollable div.scrollableArea img
+		{
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 0;
+			/* If you don't want the images in the scroller to be selectable, try the following
+			   block of code. It's just a nice feature that prevent the images from
+			   accidentally becoming selected/inverted when the user interacts with the scroller. */
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+	</style>
+	
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:300});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:160});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'260px'},{queue:false,duration:160});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'220px'},{queue:false,duration:160});
+				});
+			});
+		</script>
+	
+
+</head>
+
+<body>
+	<div class = "content">
+	
+	
+		<div class = "row" id = "one" style = "height:300px">
+			<div class = "tile" id = "one">
+				<div class = "info">
+					<div id = "name">Kevin McDonald</div>
+					<div id = "school">University of Wisconsin-Madison</div>
+					<div id = "degree">Bachelor's of Science</div>
+					<div id = "major">Computer Science - '13</div>
+				</div>
+			</div>
+			<div class = "tile" id = "two">
+				<div id="makeMeScrollable">
+					<img src="images/me.jpg" height="100%">
+					<img src="images/me2.jpg" height="100%">
+					<img src="images/me3.jpg" height="100%">
+					<img src="images/me4.jpg" height="100%">
+					<img src="images/me5.jpg" height="100%">
+					<img src="images/me6.jpg" height="100%">
+					<img src="images/me7.jpg" height="100%">
+					<img src="images/me8.jpg" height="100%">			
+				</div></div>
+			
+		</div>
+		
+		<div class = "row" id = "two">
+				
+			<a href="files/resume1_9_13.pdf" target="_blank">
+				<div class = "tile" id = "four">
+					<div class = "tileText">Resume</div>
+				</div>
+			</a>
+			
+			<a href="http://www.linkedin.com/in/kevinmcdonald19" target="_blank">
+				<div class = "tile" id = "five">
+					<div class = "tileText">LinkedIn</div>
+				</div>
+			</a>
+			
+			<a href="https://github.com/kevinmcdonald19" target="_blank">
+				<div class = "tile" id = "six">
+					<div class = "tileText">Git Hub</div>
+				</div>
+			</a>
+			
+			<a href="http://ioscodez.blogspot.com/" target="_blank">
+				<div class = "tile" id = "seven">
+					<div class = "tileText">Blogs</div>
+				</div>
+			</a>
+
+		</div>
+		
+		<!-- THIS IS TO BE USED WHEN YOU WANT A SLIDING PHOTO OVER SOME TEXT
+		<div class="boxgrid slideright">
+			<img class="cover" id = "resumePic" src="images/resume.svg" />
+		</div>
+		-->
+		
+		
+		
+		
+		
+			<!-- LOAD JAVASCRIPT LATE - JUST BEFORE THE BODY TAG 
+	     That way the browser will have loaded the images
+		 and will know the width of the images. No need to
+		 specify the width in the CSS or inline. -->
+
+	<!-- jQuery library - Please load it from Google API's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+
+	<!-- jQuery UI Widget and Effects Core (custom download)
+	     You can make your own at: http://jqueryui.com/download -->
+	<script src="horizontal-scroll/js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+	
+	<!-- Latest version (3.0.6) of jQuery Mouse Wheel by Brandon Aaron
+	     You will find it here: http://brandonaaron.net/code/mousewheel/demos -->
+	<script src="horizontal-scroll/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+	<!-- jQuery Kinectic (1.5) used for touch scrolling -->
+	<script src="horizontal-scroll/js/jquery.kinetic.js" type="text/javascript"></script>
+
+	<!-- Smooth Div Scroll 1.3 minified-->
+	<script src="horizontal-scroll/js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+
+	<!-- If you want to look at the uncompressed version you find it at
+	     js/jquery.smoothDivScroll-1.3.js -->
+
+	<!-- Plugin initialization -->
+	<script type="text/javascript">
+		// Initialize the plugin with no custom options
+		$(document).ready(function () {
+			// None of the options are set
+			$("div#makeMeScrollable").smoothDivScroll({
+				autoScrollingMode: "onStart"
+			});
+		});
+	</script>
+		
+		
+	</div>
+</body>
+
+</html>

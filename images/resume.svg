@@ -1,0 +1,21 @@
+<?xml version="1.0"?><svg width="744.09448819" height="1052.3622047" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <metadata id="metadata2850">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g externalResourcesRequired="false" id="layer1">
+   <g externalResourcesRequired="false" transform="matrix(1.21223 0 0 1.24013 -88.015 -110.963)" id="g2931">
+    <rect fill="#ffffff" fill-rule="evenodd" stroke="#2d2d2d" stroke-width="12.069303" stroke-miterlimit="4" id="rect10124" width="602.37073" height="820.55212" x="78.867676" y="101.51817"/>
+    <path fill="none" stroke="#000000" stroke-width="5.732849px" d="m164.690048,204.53157c26.919678,0 430.713272,0 430.713272,0" id="path10148"/>
+    <use fill="#000000" stroke="#000000" x="0" y="431.777618" xlink:href="#path10148" id="use10172" width="800" height="900"/>
+    <use fill="#000000" stroke="#000000" x="0" y="371.431213" xlink:href="#path10148" id="use10174" width="800" height="900"/>
+    <use fill="#000000" stroke="#5d3a3a" x="0" y="311.084625" xlink:href="#path10148" id="use10176" width="800" height="900"/>
+    <use fill="#000000" stroke="#000000" x="0" y="250.738205" xlink:href="#path10148" id="use10178" width="800" height="900"/>
+    <use fill="#000000" stroke="#000000" x="0" y="190.391617" xlink:href="#path10148" id="use10180" width="800" height="900"/>
+    <use fill="#000000" stroke="#000000" x="0" y="130.045212" xlink:href="#path10148" id="use10182" width="800" height="900"/>
+    <use fill="#000000" stroke="#000000" x="0" y="69.525703" xlink:href="#path10148" id="use10184" width="800" height="900"/>
+    <use fill="#000000" stroke="#000000" x="0" y="0" xlink:href="#path10148" id="use10172-9" transform="matrix(0.49775293,0,0,1,299.88363,552.76111)" width="800" height="900"/>
+   </g>
+  </g>
+ </g>
+</svg>
